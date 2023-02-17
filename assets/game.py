@@ -10,6 +10,7 @@ from assets.states import LETTER_STATES
 
 
 class Game:
+
     _wordsize: int
 
     def __init__(self, filepath: str = r"5_letter_words.txt", dictionary: list[str] = None, wordsize: int = 5, target: str = None):
@@ -153,8 +154,3 @@ class Game:
             guess_word = "".join([letter.value for letter in guess_result])
             print(f"guess word: {guess_word}")
         print("YOU WIN!!!")
-
-
-
-
-Game().unknown_word()
