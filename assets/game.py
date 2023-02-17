@@ -2,6 +2,7 @@
 This module represents manually triggering game events by directly prompting the user for real-time inputs
 """
 import re
+import os
 
 from assets.wordle_picker import DictionaryReader, WordPicker, TargetWord
 from assets.wordle_word import WordleWordREGEX, WordleLetter
@@ -13,7 +14,7 @@ class Game:
 
     _wordsize: int
 
-    def __init__(self, filepath: str = r"5_letter_words.txt", dictionary: list[str] = None, wordsize: int = 5, target: str = None):
+    def __init__(self, filepath: str = os.path.join("assets", "5_letter_words.txt"), dictionary: list[str] = None, wordsize: int = 5):
         """
         ManualGame prompts the user for real-time manual inputs to play the game of Wordle
 
