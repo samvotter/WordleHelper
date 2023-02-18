@@ -1,5 +1,7 @@
-LETTER_STATES = {
-    0: "GREY",
-    1: "YELLOW",
-    2: "GREEN"
-}
+import enum
+
+
+class LetterState(enum.StrEnum):
+    GREY = "Grey"
+    YELLOW = "Yellow"
+    GREEN = "Green"

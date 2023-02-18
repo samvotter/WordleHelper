@@ -7,7 +7,7 @@ import os
 from assets.wordle_picker import DictionaryReader, WordPicker, TargetWord
 from assets.wordle_word import WordleWordREGEX, WordleLetter
 from assets.string_analyzer import TokenAnalyzer
-from assets.states import LETTER_STATES
+from assets.states import LetterState
 
 
 class Game:
